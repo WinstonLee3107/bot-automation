@@ -77,8 +77,6 @@ export default class TaiwanShopeeBot {
     btnLogin.click() // do not await for this click since it may hang = =
     logger.info('Login form submitted. Waiting for redirect.')
 
-
-
     // Wait for something happens.
     const xpath = [
       ...txt.WRONG_PASSWORDS.map(e => xpathByText('div', e)),
